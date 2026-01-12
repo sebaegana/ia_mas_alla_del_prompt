@@ -11,9 +11,5 @@ format:
     incremental: true
     transition: slide
     self-contained: true
-    logo: "imagenes/Imagen1.jpg"
-    footer: "© Sebastián Egaña Santibáñez"
-    embed-resources: true
 
-editor: visual
 
