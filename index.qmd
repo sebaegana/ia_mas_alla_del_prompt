@@ -15,6 +15,7 @@ format:
     logo: "imagenes/Imagen1.jpg"
     footer: "© Sebastián Egaña Santibáñez"
     include-in-header: styles.html
+    output-file: index.html
   pdf:
     toc: false
     papersize: a4
@@ -56,9 +57,9 @@ Los LLM's son probabilísticos, no deterministas.
 
 El mismo prompt → resultados distintos
 
-:::: columns
+::::columns
 
-::: column
+:::column
 
 Sensibles a:
 
@@ -69,7 +70,7 @@ Sensibles a:
 
 ::: 
 
-::: column
+:::column
 ¿Que implica esto?
 
 - Buen desempeño en demos  
@@ -80,7 +81,7 @@ Sensibles a:
 ::: 
 ::::
 
-------------------------------------------------------------------------
+---
 
 ## ¿Por qué el prompt no escala?
 
@@ -99,7 +100,7 @@ El prompt:
 
 > Usar solo prompts es como entrenar un modelo “de memoria” cada vez.
 
-------------------------------------------------------------------------
+---
 
 ## Objetivo real: estabilizar la salida del modelo
 
@@ -124,7 +125,7 @@ Buscamos:
 
 > LLM como componente, no como oráculo
 
-------------------------------------------------------------------------
+---
 
 ## Primer pilar: RAG (Retrieval-Augmented Generation)
 
