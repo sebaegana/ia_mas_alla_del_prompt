@@ -3,3 +3,9 @@ project:
 
 editor: visual
 
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    self-contained: true
+
