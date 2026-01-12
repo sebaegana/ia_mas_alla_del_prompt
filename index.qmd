@@ -2,7 +2,7 @@
 listing_title: "Diapositiva 01"
 title: "IA más allá del prompt"
 subtitle: "RAG, automatización y memoria"
-institution: 'UNegocios'
+institution: "UNegocios"
 lang: es
 date: today
 format:
@@ -19,7 +19,6 @@ format:
     toc: false
     papersize: a4
     geometry: margin=1in
-
 ---
 
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
