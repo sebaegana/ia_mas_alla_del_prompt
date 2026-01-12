@@ -15,7 +15,6 @@ format:
     logo: "imagenes/Imagen1.jpg"
     footer: "© Sebastián Egaña Santibáñez"
     include-in-header: styles.html
-    output-file: index.html
   pdf:
     toc: false
     papersize: a4
