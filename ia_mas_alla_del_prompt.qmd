@@ -267,12 +267,95 @@ Schema:
 
 > Sin automatización, la IA es solo una herramienta; con automatización, es un sistema.
 
+El paso posterior a esto es la construcción de agentes en donde el LLM opera como un orquestador de distintas herramnientas, que pueden ser tan simple como una calculadora o más compleja como otro LLM, entre otras.
+
+---
+
+
+## Tercer pilar: Memoria (estado y aprendizaje)
+
+:::tiny
+
+::::columns
+
+:::column
+
+**Qué NO es memoria**
+
+<ul style="list-style-type:none; padding-left:0;">
+<li>Historial infinito del chat ❌ </li>
+</ul>
+
+**Qué SÍ es memoria**
+
+<ul style="list-style-type:none; padding-left:0;">
+<li>Persistencia selectiva </li>
+<li>Estado del proceso </li>
+<li>Preferencias </li>
+<li>Decisiones pasadas </li>
+</ul>
+
+:::
+
+:::column
+
+**Tipos**
+
+<ul style="list-style-type:none; padding-left:0;">
+<li>🟢 Memoria de corto plazo (ventana de contexto): se mantiene dentro de la covnersación  y está limitada por tokens </li>
+<li>🔵 Memoria de largo plazo (vectores / DB): permite "recuerdar" en el largo plazo y habilita la posibilidad de personalizar al modificarla </li>
+<li>🟠 Memoria operacional (estado del flujo): relacionada con agentes y orientada a determinar los pasos del proceso y el estado en el que se encuentra </li>
+</ul>
+:::
+
+::::
+
+:::
+
+---
+
+## La integración: Prompt + RAG + Automatización + Memoria
+
+Aquí está la tesis completa
+
+Componente	Rol
+Prompt	Interfaz humana
+RAG	Contexto confiable
+Automatización	Repetibilidad
+Memoria	Continuidad
+
+**Mensaje central:**
+
+> La estabilidad no viene del prompt, sino del sistema.
+
+---
+
+## Implicancias para organizaciones
+
+🛬 **Aterrizaje ejecutivo**
+
+Menos riesgo
+Menos alucinaciones
+Más confianza
+Escalabilidad real
+Auditoría y control
+
+📌 **Cambio de mentalidad:**
+
+> No implementar IA → diseñar sistemas con IA.
+
+---
+
+## Cierre 
+
+> El futuro de la IA no es escribir mejores prompts, es diseñar mejores sistemas.
+
 ---
 
 # Referencias
 
 :::tiny
 
-https://mindfulmatrix.substack.com/p/build-a-simple-llm-application-with?utm_source=chatgpt.com
+Gandhi, S. (2024, April 7). Building LLM application using RAG: How to query your document using LLM. Mindful Matrix. Retrieved from <https://mindfulmatrix.substack.com/p/build-a-simple-llm-application-with>
 
 :::
