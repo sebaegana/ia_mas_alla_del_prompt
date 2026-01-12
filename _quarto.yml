@@ -1,9 +1,8 @@
 project:
   type: default
-  title: "ia_mas_alla_del_prompt"
-  output-dir: .
-
-editor: visual
+  output-dir: docs
+  render:
+    - index.qmd
 
 format:
   revealjs:
@@ -11,5 +10,9 @@ format:
     slide-number: true
     incremental: true
     transition: slide
-    self-contained: false
+    self-contained: true
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+
+editor: visual
 
