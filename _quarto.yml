@@ -1,5 +1,7 @@
 project:
+  type: default
   title: "ia_mas_alla_del_prompt"
+  output-dir: .
 
 editor: visual
 
@@ -7,5 +9,7 @@ format:
   revealjs:
     theme: simple
     slide-number: true
-    self-contained: true
+    incremental: true
+    transition: slide
+    self-contained: false
 
