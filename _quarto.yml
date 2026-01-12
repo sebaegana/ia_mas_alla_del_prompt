@@ -1,15 +1,6 @@
 project:
-  type: default
-  output-dir: docs
-  render:
-    - index.qmd
+  title: "ia_mas_alla_del_prompt"
 
-format:
-  revealjs:
-    theme: simple
-    slide-number: true
-    incremental: true
-    transition: slide
-    self-contained: true
+editor: visual
 
 
