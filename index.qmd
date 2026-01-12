@@ -15,7 +15,6 @@ format:
     logo: "imagenes/Imagen1.jpg"
     footer: "© Sebastián Egaña Santibáñez"
     include-in-header: styles.html
-    output-file: index.html
   pdf:
     toc: false
     papersize: a4
@@ -63,20 +62,24 @@ El mismo prompt → resultados distintos
 
 Sensibles a:
 
-- Orden del texto  
-- Contexto previo  
-- Temperatura  
-- Estado de la conversación  
+<ul style="list-style-type:none; padding-left:0;">
+<li> Orden del texto  </li>
+<li> Contexto previo  </li>
+<li>Temperatura  </li>
+<li>Estado de la conversación  </li>
+</ul>
 
 ::: 
 
 :::column
 ¿Que implica esto?
 
-- Buen desempeño en demos  
-- ❌ Frágiles en producción  
-- ❌ Difíciles de auditar  
-- ❌ Resultados no reproducibles  
+<ul style="list-style-type:none; padding-left:0;">
+<li>Buen desempeño en demos  </li>
+<li> ❌ Frágiles en producción  </li>
+<li> ❌ Difíciles de auditar  </li>
+<li>❌ Resultados no reproducibles  </li>
+</ul>
 
 ::: 
 ::::
@@ -90,10 +93,13 @@ Sensibles a:
 :::tiny
 El prompt:
 
-- Vive en la cabeza del usuario  
-- No es versionable  
-- No es auditable  
-- No es reproducible
+<ul style="list-style-type:none; padding-left:0;">
+<li> Vive en la cabeza del usuario </li> 
+<li> No es versionable  </li>
+<li> No es auditable  </li>
+<li> No es reproducible</li>
+</ul>
+
 :::
 
 📌 **Analogía potente**
@@ -104,47 +110,70 @@ El prompt:
 
 ## Objetivo real: estabilizar la salida del modelo
 
-**Cambio de foco**
+::::columns
 
-:::tiny
+:::column
 
 No buscamos:
 
-- “respuestas creativas”
-
-Buscamos:
-
-- consistencia
-- trazabilidad
-- control
-- alineamiento con negocio
+<ul style="list-style-type:none; padding-left:0;">
+<li> “respuestas creativas”</li>
+</ul>
 
 :::
 
-📌 **Introduce el concepto**
+:::column
+
+Buscamos:
+
+<ul style="list-style-type:none; padding-left:0;">
+<li> consistencia</li>
+<li> trazabilidad</li>
+<li> control</li>
+<li> alineamiento con negocio</li>
+</ul>
+
+:::
+
+📌 **Cambio de foco**
 
 > LLM como componente, no como oráculo
+
+:::
 
 ---
 
 ## Primer pilar: RAG (Retrieval-Augmented Generation)
 
+::::columns
+
+:::column
+
 **Qué problema resuelve**
 
-- Alucinaciones
-- Conocimiento obsoleto
-- Dependencia del prompt
+<ul style="list-style-type:none; padding-left:0;">
+<li> Alucinaciones</li>
+<li> Conocimiento obsoleto</li>
+<li> Dependencia del prompt</li>
+</ul>
+
+:::
+
+:::column
 
 **Qué hace RAG**
 
 Separa:
 
-- conocimiento (documentos)
-- razonamiento (modelo)
+<ul style="list-style-type:none; padding-left:0;">
+<li> conocimiento (documentos)</li>
+<li> razonamiento (modelo)</li>
+</ul>
 
-**El modelo no inventa, recupera**
+:::
+::::
 
-📌 **Frase clave**
+📌 **El RAG no inventa, recupera**
 
 > RAG transforma un LLM genérico en un sistema experto contextual.
 
@@ -158,18 +187,34 @@ Separa:
 
 ## Segundo pilar: Automatización (orquestación)
 
+::::columns
+
+:::column
+
 Problema:
 
-- Uso manual
-- Resultados no repetibles
-- Dependencia humana
+<ul style="list-style-type:none; padding-left:0;">
+<li> Uso manual</li>
+<li> Resultados no repetibles</li>
+<li> Dependencia humana</li>
+</ul>
+
+:::
+
+:::column
 
 Automatizar implica
 
-- Flujos definidos
-- Entradas controladas
-- Salidas esperadas
-- Evaluación automática
+<ul style="list-style-type:none; padding-left:0;">
+<li> Flujos definidos</li>
+<li> Entradas controladas</li>
+<li> Salidas esperadas</li>
+<li> Evaluación automática</li>
+</ul>
+
+:::
+
+::::
 
 ---
 
@@ -316,17 +361,23 @@ El paso posterior a esto es la construcción de agentes en donde el LLM opera co
 
 ## La integración: Prompt + RAG + Automatización + Memoria
 
+:::tiny
+
 Aquí está la tesis completa
 
-Componente	Rol
-Prompt	Interfaz humana
-RAG	Contexto confiable
-Automatización	Repetibilidad
-Memoria	Continuidad
+<ul style="list-style-type:none; padding-left:0;">
+<li>Componente	Rol</li>
+<li>Prompt	Interfaz humana</li>
+<li>RAG	Contexto confiable</li>
+<li>Automatización	Repetibilidad</li>
+<li>Memoria	Continuidad</li>
+</ul>
 
-**Mensaje central:**
+**🎯 Mensaje central:**
 
 > La estabilidad no viene del prompt, sino del sistema.
+
+:::
 
 ---
 
@@ -334,11 +385,13 @@ Memoria	Continuidad
 
 🛬 **Aterrizaje ejecutivo**
 
-Menos riesgo
-Menos alucinaciones
-Más confianza
-Escalabilidad real
-Auditoría y control
+<ul style="list-style-type:none; padding-left:0;">
+<li>Menos riesgo</li>
+<li>Menos alucinaciones</li>
+<li>Más confianza</li>
+<li>Escalabilidad real</li>
+<li>Auditoría y control</li>
+</ul>
 
 📌 **Cambio de mentalidad:**
 

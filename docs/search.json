@@ -4,28 +4,28 @@
     "href": "index.html#el-problema-la-inestabilidad-de-los-llm",
     "title": "IA más allá del prompt",
     "section": "El problema: la inestabilidad de los LLM",
-    "text": "El problema: la inestabilidad de los LLM\nLos LLM’s son probabilísticos, no deterministas.\nEl mismo prompt → resultados distintos\n\n\nSensibles a:\n\nOrden del texto\n\nContexto previo\n\nTemperatura\n\nEstado de la conversación\n\n\n¿Que implica esto?\n\nBuen desempeño en demos\n\n❌ Frágiles en producción\n\n❌ Difíciles de auditar\n\n❌ Resultados no reproducibles"
+    "text": "El problema: la inestabilidad de los LLM\nLos LLM’s son probabilísticos, no deterministas.\nEl mismo prompt → resultados distintos\n\n\nSensibles a:\n\n\nOrden del texto\n\n\nContexto previo\n\n\nTemperatura\n\n\nEstado de la conversación\n\n\n\n¿Que implica esto?\n\n\nBuen desempeño en demos\n\n\n❌ Frágiles en producción\n\n\n❌ Difíciles de auditar\n\n\n❌ Resultados no reproducibles"
   },
   {
     "objectID": "index.html#por-qué-el-prompt-no-escala",
     "href": "index.html#por-qué-el-prompt-no-escala",
     "title": "IA más allá del prompt",
     "section": "¿Por qué el prompt no escala?",
-    "text": "¿Por qué el prompt no escala?\nAquí ocurre el quiebre conceptual\n\nEl prompt:\n\nVive en la cabeza del usuario\n\nNo es versionable\n\nNo es auditable\n\nNo es reproducible\n\n\n📌 Analogía potente\n\nUsar solo prompts es como entrenar un modelo “de memoria” cada vez."
+    "text": "¿Por qué el prompt no escala?\nAquí ocurre el quiebre conceptual\n\nEl prompt:\n\n\nVive en la cabeza del usuario\n\n\nNo es versionable\n\n\nNo es auditable\n\n\nNo es reproducible\n\n\n\n📌 Analogía potente\n\nUsar solo prompts es como entrenar un modelo “de memoria” cada vez."
   },
   {
     "objectID": "index.html#objetivo-real-estabilizar-la-salida-del-modelo",
     "href": "index.html#objetivo-real-estabilizar-la-salida-del-modelo",
     "title": "IA más allá del prompt",
     "section": "Objetivo real: estabilizar la salida del modelo",
-    "text": "Objetivo real: estabilizar la salida del modelo\nCambio de foco\n\nNo buscamos:\n\n“respuestas creativas”\n\nBuscamos:\n\nconsistencia\ntrazabilidad\ncontrol\nalineamiento con negocio\n\n\n📌 Introduce el concepto\n\nLLM como componente, no como oráculo"
+    "text": "Objetivo real: estabilizar la salida del modelo\n\n\nNo buscamos:\n\n\n“respuestas creativas”\n\n\n\nBuscamos:\n\n\nconsistencia\n\n\ntrazabilidad\n\n\ncontrol\n\n\nalineamiento con negocio\n\n\n📌 Cambio de foco\nLLM como componente, no como oráculo"
   },
   {
     "objectID": "index.html#primer-pilar-rag-retrieval-augmented-generation",
     "href": "index.html#primer-pilar-rag-retrieval-augmented-generation",
     "title": "IA más allá del prompt",
     "section": "Primer pilar: RAG (Retrieval-Augmented Generation)",
-    "text": "Primer pilar: RAG (Retrieval-Augmented Generation)\nQué problema resuelve\n\nAlucinaciones\nConocimiento obsoleto\nDependencia del prompt\n\nQué hace RAG\nSepara:\n\nconocimiento (documentos)\nrazonamiento (modelo)\n\nEl modelo no inventa, recupera\n📌 Frase clave\n\nRAG transforma un LLM genérico en un sistema experto contextual."
+    "text": "Primer pilar: RAG (Retrieval-Augmented Generation)\n\n\nQué problema resuelve\n\n\nAlucinaciones\n\n\nConocimiento obsoleto\n\n\nDependencia del prompt\n\n\n\nQué hace RAG\nSepara:\n\n\nconocimiento (documentos)\n\n\nrazonamiento (modelo)\n\n\n\n📌 El RAG no inventa, recupera\n\nRAG transforma un LLM genérico en un sistema experto contextual."
   },
   {
     "objectID": "index.html#en-detalle",
@@ -39,7 +39,7 @@
     "href": "index.html#segundo-pilar-automatización-orquestación",
     "title": "IA más allá del prompt",
     "section": "Segundo pilar: Automatización (orquestación)",
-    "text": "Segundo pilar: Automatización (orquestación)\nProblema:\n\nUso manual\nResultados no repetibles\nDependencia humana\n\nAutomatizar implica\n\nFlujos definidos\nEntradas controladas\nSalidas esperadas\nEvaluación automática"
+    "text": "Segundo pilar: Automatización (orquestación)\n\n\nProblema:\n\n\nUso manual\n\n\nResultados no repetibles\n\n\nDependencia humana\n\n\n\nAutomatizar implica\n\n\nFlujos definidos\n\n\nEntradas controladas\n\n\nSalidas esperadas\n\n\nEvaluación automática"
   },
   {
     "objectID": "index.html#ejemplo-de-un-flujo",
@@ -74,14 +74,14 @@
     "href": "index.html#la-integración-prompt-rag-automatización-memoria",
     "title": "IA más allá del prompt",
     "section": "La integración: Prompt + RAG + Automatización + Memoria",
-    "text": "La integración: Prompt + RAG + Automatización + Memoria\nAquí está la tesis completa\nComponente Rol Prompt Interfaz humana RAG Contexto confiable Automatización Repetibilidad Memoria Continuidad\nMensaje central:\n\nLa estabilidad no viene del prompt, sino del sistema."
+    "text": "La integración: Prompt + RAG + Automatización + Memoria\n\nAquí está la tesis completa\n\n\nComponente Rol\n\n\nPrompt Interfaz humana\n\n\nRAG Contexto confiable\n\n\nAutomatización Repetibilidad\n\n\nMemoria Continuidad\n\n\n🎯 Mensaje central:\n\nLa estabilidad no viene del prompt, sino del sistema."
   },
   {
     "objectID": "index.html#implicancias-para-organizaciones",
     "href": "index.html#implicancias-para-organizaciones",
     "title": "IA más allá del prompt",
     "section": "Implicancias para organizaciones",
-    "text": "Implicancias para organizaciones\n🛬 Aterrizaje ejecutivo\nMenos riesgo Menos alucinaciones Más confianza Escalabilidad real Auditoría y control\n📌 Cambio de mentalidad:\n\nNo implementar IA → diseñar sistemas con IA."
+    "text": "Implicancias para organizaciones\n🛬 Aterrizaje ejecutivo\n\n\nMenos riesgo\n\n\nMenos alucinaciones\n\n\nMás confianza\n\n\nEscalabilidad real\n\n\nAuditoría y control\n\n\n📌 Cambio de mentalidad:\n\nNo implementar IA → diseñar sistemas con IA."
   },
   {
     "objectID": "index.html#cierre",
