@@ -1,5 +1,7 @@
 project:
   title: "ia_mas_alla_del_prompt"
+  type: website
+  output-dir: docs
 
 editor: visual
 

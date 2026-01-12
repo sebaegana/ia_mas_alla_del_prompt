@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "index.html#el-problema-la-inestabilidad-de-los-llm",
+    "href": "index.html#el-problema-la-inestabilidad-de-los-llm",
+    "title": "IA más allá del prompt",
+    "section": "El problema: la inestabilidad de los LLM",
+    "text": "El problema: la inestabilidad de los LLM\nLos LLM’s son probabilísticos, no deterministas.\nEl mismo prompt → resultados distintos\n\n\nSensibles a:\n\nOrden del texto\n\nContexto previo\n\nTemperatura\n\nEstado de la conversación\n\n\n¿Que implica esto?\n\nBuen desempeño en demos\n\n❌ Frágiles en producción\n\n❌ Difíciles de auditar\n\n❌ Resultados no reproducibles"
+  },
+  {
+    "objectID": "index.html#por-qué-el-prompt-no-escala",
+    "href": "index.html#por-qué-el-prompt-no-escala",
+    "title": "IA más allá del prompt",
+    "section": "¿Por qué el prompt no escala?",
+    "text": "¿Por qué el prompt no escala?\nAquí ocurre el quiebre conceptual\n\nEl prompt:\n\nVive en la cabeza del usuario\n\nNo es versionable\n\nNo es auditable\n\nNo es reproducible\n\n\n📌 Analogía potente\n\nUsar solo prompts es como entrenar un modelo “de memoria” cada vez."
+  },
+  {
+    "objectID": "index.html#objetivo-real-estabilizar-la-salida-del-modelo",
+    "href": "index.html#objetivo-real-estabilizar-la-salida-del-modelo",
+    "title": "IA más allá del prompt",
+    "section": "Objetivo real: estabilizar la salida del modelo",
+    "text": "Objetivo real: estabilizar la salida del modelo\nCambio de foco\n\nNo buscamos:\n\n“respuestas creativas”\n\nBuscamos:\n\nconsistencia\ntrazabilidad\ncontrol\nalineamiento con negocio\n\n\n📌 Introduce el concepto\n\nLLM como componente, no como oráculo"
+  },
+  {
+    "objectID": "index.html#primer-pilar-rag-retrieval-augmented-generation",
+    "href": "index.html#primer-pilar-rag-retrieval-augmented-generation",
+    "title": "IA más allá del prompt",
+    "section": "Primer pilar: RAG (Retrieval-Augmented Generation)",
+    "text": "Primer pilar: RAG (Retrieval-Augmented Generation)\nQué problema resuelve\n\nAlucinaciones\nConocimiento obsoleto\nDependencia del prompt\n\nQué hace RAG\nSepara:\n\nconocimiento (documentos)\nrazonamiento (modelo)\n\nEl modelo no inventa, recupera\n📌 Frase clave\n\nRAG transforma un LLM genérico en un sistema experto contextual."
+  },
+  {
+    "objectID": "index.html#en-detalle",
+    "href": "index.html#en-detalle",
+    "title": "IA más allá del prompt",
+    "section": "En detalle",
+    "text": "En detalle\n\nRecuperada en: https://mindfulmatrix.substack.com/p/build-a-simple-llm-application-with?utm_source=chatgpt.com"
+  },
+  {
+    "objectID": "index.html#segundo-pilar-automatización-orquestación",
+    "href": "index.html#segundo-pilar-automatización-orquestación",
+    "title": "IA más allá del prompt",
+    "section": "Segundo pilar: Automatización (orquestación)",
+    "text": "Segundo pilar: Automatización (orquestación)\nProblema:\n\nUso manual\nResultados no repetibles\nDependencia humana\n\nAutomatizar implica\n\nFlujos definidos\nEntradas controladas\nSalidas esperadas\nEvaluación automática"
+  },
+  {
+    "objectID": "index.html#ejemplo-de-un-flujo",
+    "href": "index.html#ejemplo-de-un-flujo",
+    "title": "IA más allá del prompt",
+    "section": "💻 Ejemplo de un flujo",
+    "text": "💻 Ejemplo de un flujo\n\nEjemplo generado dentro del curso"
+  },
+  {
+    "objectID": "index.html#dónde-entra-el-llm",
+    "href": "index.html#dónde-entra-el-llm",
+    "title": "IA más allá del prompt",
+    "section": "🤯 ¿Dónde entra el LLM?",
+    "text": "🤯 ¿Dónde entra el LLM?\n\n\n\nSystem Instructions\nRole: You are a highly intelligent and accurate sentiment analyzer.\nTask: Analyze the sentiment of the provided text and categorize it into one of the following classes:\n\n\nPositive\n\n\nNeutral\n\n\nNegative\n\n\nOutput Rules\n\n\nOutput only JSON\n\n\nFollow the provided formatting instructions strictly\n\n\nDo not include any additional text outside the JSON\n\n\nOutput Format Constraint\nJSON Schema Compliance\n\n\nThe output must conform exactly to a given JSON Schema instance.\n\n\nAll required fields must be present.\n\n\nNo extra fields are allowed.\n\n\nNo trailing commas.\n\n\n\n\n\nSchema:\n\n\n\n{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"sentiment\": {\n      \"type\": \"string\",\n      \"enum\": [\"Positive\", \"Neutral\", \"Negative\"]\n    },\n    \"strength\": {\n      \"type\": \"number\",\n      \"minimum\": 0,\n      \"maximum\": 1,\n      \"description\": \"Strength score for sentiment in relation to the category\"\n    },\n    \"confidence\": {\n      \"type\": \"number\",\n      \"minimum\": 0,\n      \"maximum\": 1\n    }\n  },\n  \"required\": [\"sentiment\", \"strength\", \"confidence\"],\n  \"additionalProperties\": false\n}"
+  },
+  {
+    "objectID": "index.html#frase-clave",
+    "href": "index.html#frase-clave",
+    "title": "IA más allá del prompt",
+    "section": "📌 Frase clave:",
+    "text": "📌 Frase clave:\n\nSin automatización, la IA es solo una herramienta; con automatización, es un sistema.\n\nEl paso posterior a esto es la construcción de agentes en donde el LLM opera como un orquestador de distintas herramnientas, que pueden ser tan simple como una calculadora o más compleja como otro LLM, entre otras."
+  },
+  {
+    "objectID": "index.html#tercer-pilar-memoria-estado-y-aprendizaje",
+    "href": "index.html#tercer-pilar-memoria-estado-y-aprendizaje",
+    "title": "IA más allá del prompt",
+    "section": "Tercer pilar: Memoria (estado y aprendizaje)",
+    "text": "Tercer pilar: Memoria (estado y aprendizaje)\n\n\n\nQué NO es memoria\n\n\nHistorial infinito del chat ❌\n\n\nQué SÍ es memoria\n\n\nPersistencia selectiva\n\n\nEstado del proceso\n\n\nPreferencias\n\n\nDecisiones pasadas\n\n\n\nTipos\n\n\n🟢 Memoria de corto plazo (ventana de contexto): se mantiene dentro de la covnersación y está limitada por tokens\n\n\n🔵 Memoria de largo plazo (vectores / DB): permite “recuerdar” en el largo plazo y habilita la posibilidad de personalizar al modificarla\n\n\n🟠 Memoria operacional (estado del flujo): relacionada con agentes y orientada a determinar los pasos del proceso y el estado en el que se encuentra"
+  },
+  {
+    "objectID": "index.html#la-integración-prompt-rag-automatización-memoria",
+    "href": "index.html#la-integración-prompt-rag-automatización-memoria",
+    "title": "IA más allá del prompt",
+    "section": "La integración: Prompt + RAG + Automatización + Memoria",
+    "text": "La integración: Prompt + RAG + Automatización + Memoria\nAquí está la tesis completa\nComponente Rol Prompt Interfaz humana RAG Contexto confiable Automatización Repetibilidad Memoria Continuidad\nMensaje central:\n\nLa estabilidad no viene del prompt, sino del sistema."
+  },
+  {
+    "objectID": "index.html#implicancias-para-organizaciones",
+    "href": "index.html#implicancias-para-organizaciones",
+    "title": "IA más allá del prompt",
+    "section": "Implicancias para organizaciones",
+    "text": "Implicancias para organizaciones\n🛬 Aterrizaje ejecutivo\nMenos riesgo Menos alucinaciones Más confianza Escalabilidad real Auditoría y control\n📌 Cambio de mentalidad:\n\nNo implementar IA → diseñar sistemas con IA."
+  },
+  {
+    "objectID": "index.html#cierre",
+    "href": "index.html#cierre",
+    "title": "IA más allá del prompt",
+    "section": "Cierre",
+    "text": "Cierre\n\nEl futuro de la IA no es escribir mejores prompts, es diseñar mejores sistemas."
+  }
+]
