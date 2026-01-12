@@ -13,6 +13,7 @@ format:
     self-contained: true
     logo: "imagenes/Imagen1.jpg"
     footer: "© Sebastián Egaña Santibáñez"
+    embed-resources: true
 
 editor: visual
 
