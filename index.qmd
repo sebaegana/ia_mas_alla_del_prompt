@@ -102,7 +102,7 @@ El prompt:
 
 :::
 
-📌 **Analogía potente**
+📌 **Tener en cuenta**
 
 > Usar solo prompts es como entrenar un modelo “de memoria” cada vez.
 
@@ -308,11 +308,11 @@ Schema:
 
 ---
 
-## 📌 **Frase clave:**
+## 📌 **Importante**
 
 > Sin automatización, la IA es solo una herramienta; con automatización, es un sistema.
 
-El paso posterior a esto es la construcción de agentes en donde el LLM opera como un orquestador de distintas herramnientas, que pueden ser tan simple como una calculadora o más compleja como otro LLM, entre otras.
+El paso posterior a esto es la construcción de agentes en donde el LLM opera como un orquestador de distintas herramientas: pueden ser tan simple como una calculadora o más compleja como otro LLM, entre otras herramientas.
 
 ---
 
@@ -347,7 +347,7 @@ El paso posterior a esto es la construcción de agentes en donde el LLM opera co
 **Tipos**
 
 <ul style="list-style-type:none; padding-left:0;">
-<li>🟢 Memoria de corto plazo (ventana de contexto): se mantiene dentro de la covnersación  y está limitada por tokens </li>
+<li>🟢 Memoria de corto plazo (ventana de contexto): se mantiene dentro de la conversación  y está limitada por tokens </li>
 <li>🔵 Memoria de largo plazo (vectores / DB): permite "recuerdar" en el largo plazo y habilita la posibilidad de personalizar al modificarla </li>
 <li>🟠 Memoria operacional (estado del flujo): relacionada con agentes y orientada a determinar los pasos del proceso y el estado en el que se encuentra </li>
 </ul>
@@ -363,17 +363,18 @@ El paso posterior a esto es la construcción de agentes en donde el LLM opera co
 
 :::tiny
 
-Aquí está la tesis completa
+El end game:
 
-<ul style="list-style-type:none; padding-left:0;">
-<li>Componente	Rol</li>
-<li>Prompt	Interfaz humana</li>
-<li>RAG	Contexto confiable</li>
-<li>Automatización	Repetibilidad</li>
-<li>Memoria	Continuidad</li>
-</ul>
 
-**🎯 Mensaje central:**
+| Componente |	Rol |
+| - | - |
+| Prompt |	Interfaz humana |
+| RAG |	Contexto confiable |
+| Automatización |	Repetibilidad |
+| Memoria |	Continuidad |
+
+
+**🎯 Mensaje central**
 
 > La estabilidad no viene del prompt, sino del sistema.
 
@@ -404,6 +405,17 @@ Aquí está la tesis completa
 > El futuro de la IA no es escribir mejores prompts, es diseñar mejores sistemas.
 
 ---
+
+# ¿Quieres saber más?
+
+<ul style="list-style-type:none; padding-left:0;">
+<li> Revisa la plataforma de OpenAI para explicar el concepto de tokens: <https://platform.openai.com/tokenizer> </li>
+<li> Proyecto orientado a hacer competir las IA en trading: <https://nof1.ai> </li>
+
+</ul>
+
+---
+
 
 # Referencias
 

@@ -11,7 +11,7 @@
     "href": "index.html#por-qué-el-prompt-no-escala",
     "title": "IA más allá del prompt",
     "section": "¿Por qué el prompt no escala?",
-    "text": "¿Por qué el prompt no escala?\nAquí ocurre el quiebre conceptual\n\nEl prompt:\n\n\nVive en la cabeza del usuario\n\n\nNo es versionable\n\n\nNo es auditable\n\n\nNo es reproducible\n\n\n\n📌 Analogía potente\n\nUsar solo prompts es como entrenar un modelo “de memoria” cada vez."
+    "text": "¿Por qué el prompt no escala?\nAquí ocurre el quiebre conceptual\n\nEl prompt:\n\n\nVive en la cabeza del usuario\n\n\nNo es versionable\n\n\nNo es auditable\n\n\nNo es reproducible\n\n\n\n📌 Tener en cuenta\n\nUsar solo prompts es como entrenar un modelo “de memoria” cada vez."
   },
   {
     "objectID": "index.html#objetivo-real-estabilizar-la-salida-del-modelo",
@@ -56,25 +56,25 @@
     "text": "🤯 ¿Dónde entra el LLM?\n\n\n\nSystem Instructions\nRole: You are a highly intelligent and accurate sentiment analyzer.\nTask: Analyze the sentiment of the provided text and categorize it into one of the following classes:\n\n\nPositive\n\n\nNeutral\n\n\nNegative\n\n\nOutput Rules\n\n\nOutput only JSON\n\n\nFollow the provided formatting instructions strictly\n\n\nDo not include any additional text outside the JSON\n\n\nOutput Format Constraint\nJSON Schema Compliance\n\n\nThe output must conform exactly to a given JSON Schema instance.\n\n\nAll required fields must be present.\n\n\nNo extra fields are allowed.\n\n\nNo trailing commas.\n\n\n\n\n\nSchema:\n\n\n\n{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"sentiment\": {\n      \"type\": \"string\",\n      \"enum\": [\"Positive\", \"Neutral\", \"Negative\"]\n    },\n    \"strength\": {\n      \"type\": \"number\",\n      \"minimum\": 0,\n      \"maximum\": 1,\n      \"description\": \"Strength score for sentiment in relation to the category\"\n    },\n    \"confidence\": {\n      \"type\": \"number\",\n      \"minimum\": 0,\n      \"maximum\": 1\n    }\n  },\n  \"required\": [\"sentiment\", \"strength\", \"confidence\"],\n  \"additionalProperties\": false\n}"
   },
   {
-    "objectID": "index.html#frase-clave",
-    "href": "index.html#frase-clave",
+    "objectID": "index.html#importante",
+    "href": "index.html#importante",
     "title": "IA más allá del prompt",
-    "section": "📌 Frase clave:",
-    "text": "📌 Frase clave:\n\nSin automatización, la IA es solo una herramienta; con automatización, es un sistema.\n\nEl paso posterior a esto es la construcción de agentes en donde el LLM opera como un orquestador de distintas herramnientas, que pueden ser tan simple como una calculadora o más compleja como otro LLM, entre otras."
+    "section": "📌 Importante",
+    "text": "📌 Importante\n\nSin automatización, la IA es solo una herramienta; con automatización, es un sistema.\n\nEl paso posterior a esto es la construcción de agentes en donde el LLM opera como un orquestador de distintas herramientas: pueden ser tan simple como una calculadora o más compleja como otro LLM, entre otras herramientas."
   },
   {
     "objectID": "index.html#tercer-pilar-memoria-estado-y-aprendizaje",
     "href": "index.html#tercer-pilar-memoria-estado-y-aprendizaje",
     "title": "IA más allá del prompt",
     "section": "Tercer pilar: Memoria (estado y aprendizaje)",
-    "text": "Tercer pilar: Memoria (estado y aprendizaje)\n\n\n\nQué NO es memoria\n\n\nHistorial infinito del chat ❌\n\n\nQué SÍ es memoria\n\n\nPersistencia selectiva\n\n\nEstado del proceso\n\n\nPreferencias\n\n\nDecisiones pasadas\n\n\n\nTipos\n\n\n🟢 Memoria de corto plazo (ventana de contexto): se mantiene dentro de la covnersación y está limitada por tokens\n\n\n🔵 Memoria de largo plazo (vectores / DB): permite “recuerdar” en el largo plazo y habilita la posibilidad de personalizar al modificarla\n\n\n🟠 Memoria operacional (estado del flujo): relacionada con agentes y orientada a determinar los pasos del proceso y el estado en el que se encuentra"
+    "text": "Tercer pilar: Memoria (estado y aprendizaje)\n\n\n\nQué NO es memoria\n\n\nHistorial infinito del chat ❌\n\n\nQué SÍ es memoria\n\n\nPersistencia selectiva\n\n\nEstado del proceso\n\n\nPreferencias\n\n\nDecisiones pasadas\n\n\n\nTipos\n\n\n🟢 Memoria de corto plazo (ventana de contexto): se mantiene dentro de la conversación y está limitada por tokens\n\n\n🔵 Memoria de largo plazo (vectores / DB): permite “recuerdar” en el largo plazo y habilita la posibilidad de personalizar al modificarla\n\n\n🟠 Memoria operacional (estado del flujo): relacionada con agentes y orientada a determinar los pasos del proceso y el estado en el que se encuentra"
   },
   {
     "objectID": "index.html#la-integración-prompt-rag-automatización-memoria",
     "href": "index.html#la-integración-prompt-rag-automatización-memoria",
     "title": "IA más allá del prompt",
     "section": "La integración: Prompt + RAG + Automatización + Memoria",
-    "text": "La integración: Prompt + RAG + Automatización + Memoria\n\nAquí está la tesis completa\n\n\nComponente Rol\n\n\nPrompt Interfaz humana\n\n\nRAG Contexto confiable\n\n\nAutomatización Repetibilidad\n\n\nMemoria Continuidad\n\n\n🎯 Mensaje central:\n\nLa estabilidad no viene del prompt, sino del sistema."
+    "text": "La integración: Prompt + RAG + Automatización + Memoria\n\nEl end game:\n\n\n\nComponente\nRol\n\n\n\n\nPrompt\nInterfaz humana\n\n\nRAG\nContexto confiable\n\n\nAutomatización\nRepetibilidad\n\n\nMemoria\nContinuidad\n\n\n\n🎯 Mensaje central\n\nLa estabilidad no viene del prompt, sino del sistema."
   },
   {
     "objectID": "index.html#implicancias-para-organizaciones",
